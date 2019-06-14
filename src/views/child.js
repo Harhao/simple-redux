@@ -8,7 +8,7 @@ function Child() {
             <p>姓名:{state.user}</p>
             <p>年龄:{state.age}</p>
             <button onClick={()=>dispatch({type:'CHANGENAME'})}>changeName</button>
-            deep child:
+            <p>deep child:</p>
             <DeepChild/>
         </div>
 
