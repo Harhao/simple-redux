@@ -3,7 +3,6 @@ import {storeContext} from './store';
 import DeepChild from './deepChild';
 import useConnect from './connect';
 function Child() {
-    // const {state,dispatch}= useContext(storeContext);
     const {state,dispatch}= useConnect(storeContext);
     return (
         <div className="child">
