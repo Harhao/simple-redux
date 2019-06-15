@@ -1,14 +1,16 @@
 import React,{useContext} from 'react';
 import {storeContext} from './store';
 import DeepChild from './deepChild';
+import useConnect from './connect';
 function Child() {
-    const {state,dispatch}= useContext(storeContext);
+    // const {state,dispatch}= useContext(storeContext);
+    const {state,dispatch}= useConnect(storeContext);
     return (
         <div className="child">
             <p>姓名:{state.user}</p>
             <p>年龄:{state.age}</p>
             <button onClick={()=>dispatch({type:'CHANGENAME'})}>changeName</button>
-            deep child:
+            <p>deep child:</p>
             <DeepChild/>
         </div>
 

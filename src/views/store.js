@@ -1,4 +1,5 @@
 import React from 'react';
+export const storeContext = React.createContext();
 export const initialState = {
     user:'kiwis',
     age:23
@@ -11,4 +12,3 @@ export const reducer = (state, action)=>{
         return initialState;
     }
 }
-export const storeContext = React.createContext();
