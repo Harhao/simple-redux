@@ -1,3 +1,4 @@
+# React Hooks + Context打造简易redux
 > `Hook`是`React 16.8`的新特性，它可以让在不编写`class`类组件的情况下使用`state`以及其他的`React`特性；而`Context`是`React16.3`版本里面引入新的`Context API`，在以往`React`版本中存在一个`Context API`，那是一个幕后试验性功能，官方提议避免使用,`Redux`的原理就是建立在旧的`Context API`。现在新的`Context ApI`提供了一个无需为每层组件手动添加 props，就能在组件树间进行数据传递的方法,为数据通讯另辟蹊径。
 
 ### Context简介
